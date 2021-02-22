@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		var listaFuncionarios = ['Jorge', 'Jamilton', 'João', 'Ana', 'Maria']
+
+		console.log(listaFuncionarios)
+		document.write(listaFuncionarios[2])
+
+										//valor, indice, array
+		listaFuncionarios.forEach(function(x, y, z) {
+			console.log('Índice: ' + y + ' | Valor: ' + x)
+
+			if(x == 'João') {
+				z[y] = 'Lucas'
+			}
+		})
+
+		document.write('<br>' + listaFuncionarios[2])
+		console.log(listaFuncionarios)
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

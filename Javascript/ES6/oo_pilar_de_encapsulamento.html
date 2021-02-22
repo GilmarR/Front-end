@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="">
+
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+	<script type="text/babel">
+
+	class Tv {
+		constructor() {
+			this._relacoesCanais = Array(2, 4, 5, 7, 10)
+			this._canalAtivo = 5
+			this._volume = 7
+		}
+
+		get canalAtivo() {
+			return this._canalAtivo
+		}
+
+		set canalAtivo(canal) {
+			if(this._relacoesCanais.indexOf(canal) !== -1) {
+				this._canalAtivo = canal
+			}
+		}
+	}	
+
+	let tv = new Tv()
+
+	tv.canalAtivo = 3
+	console.log(tv.canalAtivo)
+
+ 
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>

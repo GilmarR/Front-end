@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+     
+    let produto = {
+      descricao: 'Notebook',
+      preco: 1800,
+      detalhes: {
+        fabricante: 'abc',
+        modelo: 'xyz',
+      }
+    }
+
+   // let { descricao: d, preco: p } = produto
+
+   let { detalhes: {fabricante: f, modelo: m}} = produto
+    console.log(f, m)
+   
+    </script>
+    
+  </head>
+  <body>
+    
+  </body>
+</html>

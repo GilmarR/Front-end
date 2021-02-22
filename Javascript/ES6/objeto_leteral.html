@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="">
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        class Produto {
+            constructor(descricao, preco) {
+                this.descricao = descricao
+                this.preco - preco
+            }
+
+            verDescricao() {
+                console.log(`${this.descricao} por apenas ${this.preco}`)
+            }
+    }
+
+        let produto = new Produto('Celular', 2200)
+        produto.verDescricao()
+
+        //----------------------------------------------------------
+
+        let produtoLiteral = {
+            descricao: 'Notebook',
+            preco: 1700,
+            verDescricao: function() {
+                console.log(`${this.descricao} por apenas ${this.preco}`)
+            }
+        }
+
+        produtoLiteral.verDescricao()
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

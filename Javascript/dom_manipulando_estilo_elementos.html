@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulando Estilo de Elementos</title>
+   
+   <script>
+
+    function modificacao (fundo, alt, larg) {
+      document.getElementById ('quadrado').style.background = fundo
+      document.getElementById ('quadrado').style.width = alt
+      document.getElementById ('quadrado').style.height = larg
+
+     
+    }
+    </script>
+    
+  </head>
+
+  <body >
+    
+    <h3>Manipulando Estilo</h3>
+
+    <button type="button" onclick="modificacao('#ff0000', '200px')">Vermelho</button>
+    <button type="button" onclick="modificacao('#00ff00', '200px', '200px')">Verde</button>
+    <button type="button" onclick="modificacao('#0000ff', '200px', '100px')">Azul</button>
+
+    <hr>
+    <div style="border: 1px solid black; width: 150px; height: 150px" id="quadrado" ></div>   
+  </body>
+</html>

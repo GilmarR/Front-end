@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      
+    let Carro = function(cor, modelo, velocidadeAtual, velocidadeMaxima) {
+      this.cor = cor
+      this.modelo = modelo
+      this.velocidadeAtual = velocidadeAtual
+      this.velocidadeMaxima = velocidadeMaxima
+
+      this.getVelocidadeAtual = function() {
+        return this.velocidadeAtual
+      }
+
+      this.setVelocidadeAtual = function(value) {
+        if(this.getVelocidadeAtual() + value <= this.velocidadeMaxima) {
+          this.velocidadeAtual += value
+        }
+        else {
+          console.log('Erro')
+        }
+      }
+
+      this.getVelocidadeMaxima = function() {
+        return this.velocidadeMaxima
+      }
+    }
+
+    let carro = new Carro('Vermelho', 'Corvette', 100, 170)
+    console.log(carro)
+    console.log(carro.getVelocidadeAtual())
+    carro.setVelocidadeAtual(30)
+    console.log(carro.getVelocidadeAtual())
+    carro.setVelocidadeAtual(50)    
+
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>
